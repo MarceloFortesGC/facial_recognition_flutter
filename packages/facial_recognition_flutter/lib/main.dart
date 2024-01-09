@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'facial_recognition/face_detector_view.dart';
+import 'facial_recognition/facial_recognition_instructions.dart';
 import 'facial_recognition/facial_recognition_provider.dart';
 
 Future<void> main() async {
@@ -65,7 +65,8 @@ class _HomeState extends State<Home> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => FaceDetectorView(),
+                            builder: (context) =>
+                                FacialRecognitionInstructions(),
                           ),
                         );
                       },
